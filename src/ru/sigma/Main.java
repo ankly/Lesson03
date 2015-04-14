@@ -34,17 +34,49 @@ public class Main {
 
         }
 
-        list.insert(6,1);
-        list.insert(9,-11);
+        list.insert(6, 1);
 
-        int[] arr = {43,65,52};
-        list.addArray(arr);
+        list.addArray(addArr);
+
+
+       System.out.println();
+        for (int i = 0; i < list.size; i++) {
+            System.out.print(list.objects[i] + " ");
+
+        }
+
+        list.insertArray(insArr, 5);
 
         System.out.println();
         for (int i = 0; i < list.size; i++) {
             System.out.print(list.objects[i] + " ");
 
         }
+
+        list.remove(5);
+
+        System.out.println();
+        for (int i = 0; i < list.size; i++) {
+            System.out.print(list.objects[i] + " ");
+
+        }
+
+        list.clear();
+
+        list.addArray(insArr);
+        list.add(5);
+        list.remove(1);
+        list.insertArray(addArr,1);
+
+        System.out.println();
+        for (int i = 0; i < list.size; i++) {
+
+            System.out.print(list.objects[i] + " ");
+
+        }
+
+
+
 
     }
 }
